@@ -3,11 +3,12 @@ import './App.css'
 import First from './components/First';
 // import Logo from './components/Logo';
 
+
 function App() {
   
 
   return (
-    <div className='flex bg-black justify-center items-center'>
+    <div className='flex bg-red justify-center items-center'>
       
     
     <First />

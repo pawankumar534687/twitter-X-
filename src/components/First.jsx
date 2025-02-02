@@ -17,12 +17,13 @@ import Logo from './Logo';
 
 const First = () => {
   return (
-    <div className=' text-white font-medium w-full overflow-y-auto flex justify-center items-center'>
+    <div className=' text-white bg-black font-medium w-full overflow-y-auto flex justify-start items-start'>
       <div className='flex '>
         <Logo />
         <BrowserRouter>
           <Navbar />
           <Routes>
+          <Route path="/" element={<Home />} /> 
              
             <Route path="/home/*" element={<Home />} />  
             <Route path="/explore" element={<Explore />} />
@@ -39,6 +40,7 @@ const First = () => {
           </Routes>
         </BrowserRouter>
       </div>
+      
     </div>
   );
 };
